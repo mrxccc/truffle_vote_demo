@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MetaCoin | Truffle Webpack Demo w/ Frontend</title>
+    <title>Voting DApp</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <h1>MetaCoin — Example Truffle Dapp</h1>
+    <p>You have <strong class="balance">loading...</strong> META</p>
+
+    <h1>A Simple Voting Application</h1>
+    <div id ="address"></div>
+    <div class="table-responsive"></div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Candidate</th>
+                <th>Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Candidate</td>
+                <td id="candidate-1"></td>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td id="candidate-2"></td>
+            </tr>
+            <tr>
+                <td>Cary</td>
+                <td id="candidate-3"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <input type="text" id="candidate" />
+    <a href="#" onclick="App.vote()" class="btn btn-primary">Vote</a>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js">
+    </script>
+  </body>
+</html>
